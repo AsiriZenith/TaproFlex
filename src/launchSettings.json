@@ -6,7 +6,13 @@
       "serviceActions": {
         "catalog.api": "StartDebugging",
         "basket.api": "StartDebugging",
-        "discount.grpc": "StartDebugging"
+        "discount.grpc": "StartDebugging",
+        "ordering.api": "StartDebugging",
+        "basketdb": "StartWithoutDebugging",
+        "catalogdb": "StartWithoutDebugging",
+        "distributedcache": "StartWithoutDebugging",
+        "messagebroker": "StartWithoutDebugging",
+        "orderdb": "StartWithoutDebugging"
       }
     }
   }
