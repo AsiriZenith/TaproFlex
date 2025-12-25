@@ -12,7 +12,8 @@
         "catalogdb": "StartWithoutDebugging",
         "distributedcache": "StartWithoutDebugging",
         "messagebroker": "StartWithoutDebugging",
-        "orderdb": "StartWithoutDebugging"
+        "orderdb": "StartWithoutDebugging",
+        "yarpapigateway": "StartDebugging"
       }
     }
   }
