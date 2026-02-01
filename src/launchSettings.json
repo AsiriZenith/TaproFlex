@@ -13,7 +13,8 @@
         "distributedcache": "StartWithoutDebugging",
         "messagebroker": "StartWithoutDebugging",
         "orderdb": "StartWithoutDebugging",
-        "yarpapigateway": "StartDebugging"
+        "yarpapigateway": "StartDebugging",
+        "shopping.web": "StartDebugging"
       }
     }
   }

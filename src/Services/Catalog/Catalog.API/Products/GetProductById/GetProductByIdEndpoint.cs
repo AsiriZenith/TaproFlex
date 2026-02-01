@@ -12,7 +12,7 @@ public class GetProductByIdEndpoint : ICarterModule
 
             var response = result.Adapt<GetProductByIdResponse>();
 
-            return Results.Ok(response.Product);
+            return Results.Ok(response);
         })
         .WithName("GetProductById")
         .Produces<GetProductByIdResponse>(StatusCodes.Status200OK)

@@ -13,7 +13,7 @@ public class GetProductByCategoryEndpoint : ICarterModule
 
                 var response = result.Adapt<GetProductByCategoryResponse>();
 
-                return Results.Ok(response.Products);
+                return Results.Ok(response);
             })
         .WithName("GetProductByCategory")
         .Produces<GetProductByCategoryResponse>(StatusCodes.Status200OK)
