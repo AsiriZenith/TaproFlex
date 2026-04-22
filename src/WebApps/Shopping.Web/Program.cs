@@ -1,6 +1,9 @@
+using BuildingBlocks.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDefaultOpenTelemetry(builder.Configuration, builder.Environment, builder.Environment.ApplicationName);
 builder.Services.AddRazorPages();
 
 builder.Services.AddRefitClient<ICatalogService>()

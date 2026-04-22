@@ -1,4 +1,5 @@
 using BuildingBlocks.Exceptions.Handler;
+using BuildingBlocks.Extensions;
 using Discount.gRPC;
 using HealthChecks.UI.Client;
 using BuildingBlocks.Messaging.MassTransit;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDefaultOpenTelemetry(builder.Configuration, builder.Environment, builder.Environment.ApplicationName);
 
 //Application Services
 var assembly = typeof(Program).Assembly;

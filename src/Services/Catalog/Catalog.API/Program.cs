@@ -1,9 +1,11 @@
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using BuildingBlocks.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDefaultOpenTelemetry(builder.Configuration, builder.Environment, builder.Environment.ApplicationName);
 
 var assembly = typeof(Program).Assembly;
 builder.Services.AddMediatR(config =>
